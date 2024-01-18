@@ -29,18 +29,12 @@ header {
   align-items: center;
   padding: 10px 200px;
 }
-.logo {
-  text-decoration: none;
-  color: #3a6cf4;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.8em;
-}
-.navigation {
-  float: right;
-  padding: 10px;
 
-  left: 100%;
+.navigation {
+  position: fixed;
+  right: 10px;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
 }
 .navigation a {
   color: black;
@@ -52,17 +46,7 @@ header {
 .navigation i {
   padding: 8px;
 }
-/* .navigation #dark-mode {
-  width: 30px;
-  cursor: pointer;
-  color: #3a6cf4;
-  padding-left: 30px;
-  font-size: 1.1em;
-  font-weight: 500;
-} */
-/* .navigation #dark-mode:hover {
-  color: purple;
-} */
+
 .navigation a:hover {
   color: #1ba0ba;
 }
@@ -99,6 +83,7 @@ section {
   color: #008db0;
   font-size: 2rem;
   font-weight: 600;
+  text-justify: auto;
 }
 .main #Engineer {
   display: inline;
@@ -190,9 +175,10 @@ figure {
   display: flex;
   justify-content: center;
   color: #008db0;
-  font: size 2.2em;
+  font-size: 2.2em;
   font-weight: 800;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  margin: 30px;
 }
 .content {
   display: flex;
@@ -200,6 +186,7 @@ figure {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .card {
   background-color: #fff;
   width: 15.25em;
@@ -214,8 +201,8 @@ figure {
 }
 
 .icon {
-  color: #3a6cf4;
-  font-size: 8em;
+  color: #40a9bf;
+  font-size: 7em;
   text-align: center;
 }
 .info {
@@ -230,6 +217,14 @@ figure {
 
 .projects {
   background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+}
+.projects .title {
+  display: flex;
+  text-justify: distribute;
+  /* text-align: center; */
+  /* flex-direction: row; */
 }
 .projects .content {
   margin-top: 30px;
@@ -237,7 +232,7 @@ figure {
 .project-card {
   background-color: #fff;
   border: 1px solid black;
-  min-height: 14em;
+  height: 14em;
   width: 15em;
   overflow: hidden;
   border-radius: 10px;
@@ -312,6 +307,10 @@ figure {
     font-size: 1.2em;
   }
 
+  .rs-element #portfolio-img {
+    width: 200px;
+    height: 200px;
+  }
   .title {
     font-size: 1.8em;
   }
@@ -337,8 +336,9 @@ figure {
   .main-btn {
     font-size: 0.9em;
   }
+
   .content {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   /* .main{
@@ -349,6 +349,19 @@ figure {
   }
   .project-title {
     font-size: 0.65em;
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+  }
+  .cards,
+  #services {
+    display: flex;
+    flex-direction: row;
+  }
+  #contact {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (max-width: 641px) {
@@ -372,6 +385,8 @@ figure {
   }
   .main .social-icons {
     font-size: 1em;
+    display: flex;
+    flex-direction: column;
   }
   .project-card .project-info {
     font-size: 1.5em;
@@ -385,6 +400,11 @@ figure {
   }
   .main {
     background-size: 250px;
+  }
+
+  .rs-element #portfolio-img {
+    width: 95px;
+    height: 95px;
   }
   .content {
     flex-direction: column;
@@ -401,25 +421,38 @@ figure {
   .footer {
     font-size: 1.2em;
   }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 300px) {
   body {
     font-size: 8px;
   }
   .navigation {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
   .main-content h2 {
-    font-size: 2em;
+    font-size: 1.1em;
   }
   .main-content h3 {
-    font-size: 1.4em;
+    font-size: 0.7em;
   }
   .main {
     background-size: 130px;
   }
   .navigation a {
     font-size: 0.8em;
+  }
+
+  .rs-element #portfolio-img {
+    width: 40px;
+    height: 40px;
   }
   .main div h2 {
     font-size: 0.8em;
@@ -438,7 +471,9 @@ figure {
   }
 
   .contact {
+    display: flex;
     flex-direction: column;
+    font-size: 7px;
   }
   .navigation a {
     font-size: 0.7em;
@@ -450,15 +485,25 @@ figure {
     width: 100%;
   }
   .card .info p {
-    font-size: 0.7em;
+    font-size: 7px;
   }
   .footer {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .social-icons a i {
-    font-size: 0.9em;
+    font-size: 0.6em;
+    display: flex;
+    flex-direction: column;
   }
   .main-btn {
-    font-size: 0.7em;
+    font-size: 0.6em;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
   }
 }
