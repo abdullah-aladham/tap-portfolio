@@ -89,6 +89,9 @@ section {
 }
 .main #article h2 {
   font-weight: 400;
+  font-size: 0.7em;
+  color: #27badb;
+  padding: 15px;
 }
 .main #greet {
   display: inline-block;
@@ -98,10 +101,11 @@ section {
   font-weight: 600;
 }
 .main #Engineer {
-  display: inline-block;
-  margin-top: 10px;
+  display: inline;
+  margin-left: -2px;
   color: #d1884f;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .main h3 {
@@ -110,6 +114,11 @@ section {
   letter-spacing: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#see-more {
+  color: #40a9bf;
+  font-size: 0.9rem;
+  display: inline;
 }
 .main-btn {
   color: #f0f0f0;
@@ -154,13 +163,19 @@ section {
 .rs-element {
   float: left;
 }
+
 .rs-element img {
   max-width: 350px;
   max-height: 350px;
+  box-shadow: -10px 10px #81d4e8;
+  border-radius: 0% 0% 0% 45%;
 }
-#portfolio-img::before {
-  box-shadow: 5px 10px #81d4e8;
+figure {
+  margin-left: 60%;
 }
+/* .rs-element img::before {
+} */
+
 #desc {
   text-align: justify;
   font-size: 0.9rem;
@@ -174,7 +189,7 @@ section {
 .title {
   display: flex;
   justify-content: center;
-  color: #3a6cf4;
+  color: #008db0;
   font: size 2.2em;
   font-weight: 800;
   margin-bottom: 30px;
@@ -187,7 +202,7 @@ section {
 }
 .card {
   background-color: #fff;
-  width: 21.25em;
+  width: 15.25em;
   box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
   border-radius: 10px;
   padding: 25px;
@@ -207,7 +222,7 @@ section {
   text-align: center;
 }
 .info h3 {
-  color: #3a6cf4;
+  color: #008db0;
   font-size: 1.2em;
   font-weight: 700;
   margin: 10px;
