@@ -37,9 +37,10 @@ header {
   font-size: 1.8em;
 }
 .navigation {
-  position: inherit;
-  padding: 50px;
-  right: 10px;
+  float: right;
+  padding: 10px;
+
+  left: 100%;
 }
 .navigation a {
   color: black;
@@ -63,9 +64,9 @@ header {
   color: purple;
 } */
 .navigation a:hover {
-  color: purple;
+  color: #1ba0ba;
 }
-.navigation a:active {
+.navigation a:visited {
   color: #d1884f;
 }
 section {
@@ -151,9 +152,7 @@ section {
   text-decoration: none;
 }
 .rs-element {
-  right: 5px;
-  left: 100px;
-  top: 10px;
+  float: left;
 }
 .rs-element img {
   max-width: 350px;
@@ -168,7 +167,7 @@ section {
 }
 /*end of main section*/
 .social-icons a {
-  color: #3a6cf4;
+  color: #008db0;
   font-size: 1.7em;
   padding-right: 30px;
 }
@@ -278,9 +277,13 @@ section {
 .footer-title {
   font-size: 1.3em;
   font-weight: 600;
+  color: black;
 }
-.footer-title span {
-  color: #3a6cf4;
+#author {
+  color: #008db0;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: inline-block;
 }
 @media (max-width: 1023px) {
   body {
@@ -444,4 +447,3 @@ section {
     font-size: 0.7em;
   }
 }
-/*Thanks for reaching the end this code is built by Abdullah azzam aladham*/
