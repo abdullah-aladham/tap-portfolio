@@ -83,6 +83,8 @@ section {
   color: #008db0;
   font-size: 2rem;
   font-weight: 600;
+  /* text-justify: auto; */
+  text-align: justify;
   text-justify: auto;
 }
 .main #Engineer {
@@ -222,12 +224,12 @@ figure {
 }
 .projects .title {
   display: flex;
-  text-justify: distribute;
+  text-justify: center;
   /* text-align: center; */
   /* flex-direction: row; */
 }
 .projects .content {
-  margin-top: 30px;
+  margin-top: 150px;
 }
 .project-card {
   background-color: #fff;
@@ -247,6 +249,7 @@ figure {
 }
 .project-image img {
   width: 100%;
+  height: auto;
 }
 .project-info {
   padding: 1em;
@@ -308,8 +311,9 @@ figure {
   }
 
   .rs-element #portfolio-img {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    max-width: 300px;
+    max-height: 300px;
   }
   .title {
     font-size: 1.8em;
@@ -324,9 +328,10 @@ figure {
     font-size: 1.2em;
     font-weight: 400;
   }
-  .main h2 span {
+  /* .main h2 span {
     font-size: 1.5em;
-  }
+  } */
+
   .main h3 {
     font-size: 0.9em;
   }
@@ -377,6 +382,13 @@ figure {
   .main div h2 span {
     font-size: 1.5em;
   }
+  .main #article #greet {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  #Engineer {
+    font-size: 0.9em;
+  }
   .main-content h2 {
     font-size: 0.5em;
   }
@@ -403,8 +415,8 @@ figure {
   }
 
   .rs-element #portfolio-img {
-    width: 95px;
-    height: 95px;
+    width: 195px;
+    height: 195px;
   }
   .content {
     flex-direction: column;
@@ -421,14 +433,16 @@ figure {
   .footer {
     font-size: 1.2em;
   }
-  .projects {
+  .projects,
+  .cards,
+  .card {
     display: flex;
     flex-direction: column;
   }
-  .cards {
+  /* .cards {
     display: flex;
     flex-direction: column;
-  }
+  } */
 }
 @media (max-width: 300px) {
   body {
@@ -451,8 +465,8 @@ figure {
   }
 
   .rs-element #portfolio-img {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
   }
   .main div h2 {
     font-size: 0.8em;
@@ -470,7 +484,8 @@ figure {
     font-size: 1.5em;
   }
 
-  .contact {
+  #contact,
+  #services {
     display: flex;
     flex-direction: column;
     font-size: 7px;
@@ -498,12 +513,13 @@ figure {
   .main-btn {
     font-size: 0.6em;
   }
-  .projects {
+  .projects,
+  .card {
     display: flex;
     flex-direction: column;
   }
-  .cards {
+  /* .cards {
     display: flex;
     flex-direction: column;
-  }
+  } */
 }
