@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,13 +83,9 @@
     </section>
 
     <section class="projects" id="projects">
-
-    <h2 class="title">Projects</h2>
-
-
-        
-           
-        <article class="content"> 
+    <h2 class="title" id="project-title">Projects</h2>
+    <article class="content">
+        <!--.content .pri-->
             <article class="project-card">
                 <figure class="project-image">
                     <img src="./images/kalemati.png"  class="project-image" alt="kalemati-logo"/>
@@ -99,19 +94,19 @@
                     <p class="project-category">Web Develpoment
                         <br>[Spring boot&React]</p>
                     <strong class="project-title">
-                        <figcaption>kalemati</figcaption>
+                        <figcaption class="proj-name">kalemati</figcaption>
                         <a href="https://github.com/abdullah-aladham/kalemati2022" class="more-details" target="_blank">More Details</a>
                     </strong>
                 </figcaption>
             </article>
             <article class="project-card">
-                <figure >
+                <figure class="project-image">
                 <img src="./images/cystack.jpg" class="project-image" >
                 </figure>
             <figcaption class="project-info">
                 <p class="project-category">Web Develpoment<br>[Laravel,React,Python]</p>
                 <strong class="project-title">
-                    <figcaption>Certimanager</figcaption>
+                    <figcaption class="proj-name">Certimanager</figcaption>
                     <a href="https://github.com/abdullah-aladham/cy-certimanager/tree/master" class="more-details" target="_blank">More Details</a>
                 </strong>
                 </figcaption>
@@ -121,20 +116,19 @@
             
             <article class="project-card">
                 <figure class="project-image">
-                <img src="./images/SE.png"/ class="project-image">
+                <img src="./images/SE.png" class="project-image">
                 </figure>
             <figcaption class="project-info">
                 <p class="project-category">Automation Testing<br>[Selenium&java]</p>
                 <strong class="project-title">
-                    <figcaption>SuperQa-Api testing</figcaption>
+                    <figcaption class="proj-name">SuperQa-Api testing</figcaption>
                     <a href="https://github.com/abdullah-aladham/super-quality-api-testing-SE" class="more-details" target="_blank">More Details</a>
                 </strong>
             </figcaption>
+            </article><!--end of project card-->
+        </article><!--end of content-->
         
-            </article>
-        
-        
-    </section>
+    </section><!--end of projects section-->
     <section class="cards contact" id="contact">
         <h2 class="title">Let's work together</h2>
         <article class="content">
@@ -154,7 +148,7 @@
                 
                     <article class="info">
                     <h3>Email</h3>
-                    <p>a.aladhamfl@gmail.com</p>
+                    <p id="email">a.aladhamfl@gmail.com</p>
                     </article>
                </article>
             

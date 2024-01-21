@@ -21,10 +21,11 @@ header {
   align-items: center;
   padding: 10px;
   margin: 20px;
+  /* width: 100%; */
 }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   right: 10px;
   padding: 10px;
   margin: 10px;
@@ -41,7 +42,7 @@ header {
 }
 
 .navigation a:hover {
-  color: #1ba0ba;
+  color: #4baabd;
 }
 .navigation a:visited {
   color: #d1884f;
@@ -61,12 +62,12 @@ section {
   background-attachment: fixed;
 }
 .main #article {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 500;
 }
 .main #article h2 {
   font-weight: 400;
-  font-size: 0.7em;
+  font-size: 0.9em;
   color: #27badb;
   padding: 15px;
 }
@@ -74,7 +75,7 @@ section {
   display: inline-block;
   margin-top: 10px;
   color: #008db0;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 600;
   /* text-justify: auto; */
   text-align: justify;
@@ -82,7 +83,7 @@ section {
 }
 .main #Engineer {
   display: inline-block;
-  /* margin-left: -2px; */
+  margin-left: -40px;
   color: #d1884f;
   font-weight: 600;
   font-size: 2em;
@@ -98,7 +99,9 @@ section {
 #see-more {
   color: #40a9bf;
   font-size: 0.9rem;
-  display: inline;
+  display: inline-block;
+  margin-top: -1000px;
+  cursor: pointer;
 }
 .main-btn {
   color: #f0f0f0;
@@ -140,10 +143,6 @@ section {
   /* transform: scale(1.1);*/
   text-decoration: none;
 }
-.rs-element {
-  float: left;
-}
-
 .rs-element img {
   max-width: 350px;
   max-height: 350px;
@@ -151,7 +150,7 @@ section {
   border-radius: 0% 0% 0% 45%;
 }
 figure {
-  margin-left: 60%;
+  margin-left: 55%;
 }
 /* .rs-element img::before {
 } */
@@ -166,7 +165,8 @@ figure {
   font-size: 1.7em;
   padding-right: 30px;
 }
-.title {
+.title,
+#project-title {
   display: flex;
   justify-content: center;
   color: #008db0;
@@ -201,7 +201,9 @@ figure {
   text-align: center;
 }
 .info {
+  justify-content: center;
   text-align: center;
+
 }
 .info h3 {
   color: #008db0;
@@ -209,29 +211,41 @@ figure {
   font-weight: 700;
   margin: 10px;
 }
+#email{
+  text-align: center;
+font-size: 1em;
+}
 
 .projects {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: row;
 }
-.projects .title {
-  display: flex;
-  text-justify: center;
-  /* text-align: center; */
-  /* flex-direction: row; */
-}
 .projects .content {
-  margin-top: 150px;
+  margin-top: 30px;
 }
 .project-card {
   background-color: #fff;
   border: 1px solid black;
-  height: 20em;
+  min-height: 14em;
   width: 15em;
   overflow: hidden;
   border-radius: 10px;
   margin: 20px;
+}
+.projects .content {
+  margin-top: 150px;
+  margin-left: 0px;
+  justify-content: space-between;
+}
+.project-card {
+  background-color: #fff;
+  border: 1px solid black;
+  max-height: 15em;
+  max-width: 10em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
 }
 .project-card:hover {
   transform: scale(1.1);
@@ -246,9 +260,9 @@ figure {
   margin-right: auto;
   width: 80%;
 }
-.project-info {
+/* .project-info {
   padding: 1em;
-}
+} */
 .project-category {
   font-size: 0.8em;
   color: black;
@@ -260,13 +274,17 @@ figure {
   font-weight: 800;
   margin-top: 10px;
 }
-#projects {
+/* #projects {
   display: flex;
   flex-direction: row;
+} */
+.proj-name {
+  font-size: 0.9rem;
 }
 .more-details {
   text-decoration: none;
   color: #3a6cf4;
+  font-size: 0.9em;
 }
 .more-details:hover {
   color: purple;
@@ -298,7 +316,8 @@ figure {
   display: inline-block;
 }
 @media (max-width: 1023px) {
-  body {
+
+   body {
     font-size: 15px;
   }
   header {
@@ -306,10 +325,36 @@ figure {
   }
   .navigation a {
     padding-left: 10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
+  }
+  .main #article h2{
+    font-size: 0.9rem;
+
+  }
+  .main #article h2 #greet{
+    font-size: 2.6em;
+    /* flex-wrap: wrap; */
+  }
+  .main #Engineer{
+    font-size: 2.6em;
+   margin-left:-24px;
+  }
+  .main #desc,#see-more{
+    font-size: 0.9em;
+  }
+  .main-btn{
+    font-size: 1em;
+  }
+  .Proj-btn{
+    font-size: 1em;
+  }
+  .card{
+    flex-wrap: wrap;
+    overflow: hidden;
   }
 
-  .rs-element #portfolio-img {
+
+  /* .rs-element #portfolio-img {
     display: flex;
     max-width: 300px;
     max-height: 300px;
@@ -326,12 +371,12 @@ figure {
   .main h2 {
     font-size: 1.2em;
     font-weight: 400;
-  }
+  } */
   /* .main h2 span {
     font-size: 1.5em;
   } */
 
-  .main h3 {
+  /* .main h3 {
     font-size: 0.9em;
   }
   .main .social-icons {
@@ -344,11 +389,11 @@ figure {
   .content {
     flex-direction: row;
     align-items: center;
-  }
+  } */
   /* .main{
         background-position:right center;
     } */
-  .project-card .project-info {
+  /* .project-card .project-info {
     font-size: 1.3em;
   }
   .project-title {
@@ -367,43 +412,45 @@ figure {
     display: flex;
     flex-direction: row;
   }
-}
+}*/
 @media (max-width: 641px) {
   body {
     font-size: 10px;
   }
-  .main div h2 {
-    font-size: 1.2em;
+  .main h2 {
+    font-size: 0.7em;
   }
-  .main div h3 {
-    font-size: 1.2em;
+  .main #Engineer {
+    font-size: 0.9em;
+    margin-left: -8px;
   }
-  .main div h2 span {
-    font-size: 1.5em;
-  }
+
   .main #article #greet {
     font-size: 0.9em;
     font-weight: 600;
   }
   #Engineer {
-    font-size: 0.9em;
+    font-size: 1em;
   }
+
   .main-content h2 {
-    font-size: 0.5em;
+    font-size: 0.3em;
   }
   .main-content span {
     font-size: 0.6 em;
   }
-  .main .social-icons {
+ .social-icons {
     font-size: 1em;
     display: flex;
+    justify-content: center;
+
     flex-direction: column;
   }
-  .project-card .project-info {
+   .project-card .project-info {
     font-size: 1.5em;
-  }
-  .project-title {
-    font-size: 0.2em;
+  } 
+  .proj-name {
+    font-size: 1.5em;
   }
 
   .main-content h3 {
@@ -414,17 +461,23 @@ figure {
   }
 
   .rs-element #portfolio-img {
-    width: 195px;
-    height: 195px;
+    max-width: 195px;
+    max-height: 195px;
   }
   .content {
+    display: flex;
     flex-direction: column;
+    
+    align-items: center;
+
   }
   .project-title {
     font-size: 0.59em;
   }
-  .project-card .project-image img {
-    width: 100%;
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
   }
   .card .info p {
     font-size: 1.2em;
@@ -432,29 +485,31 @@ figure {
   .footer {
     font-size: 1.2em;
   }
-  .projects,
-  .cards,
-  .card {
+/*  
+  {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; 
+   }  */ */
   /* .cards {
     display: flex;
     flex-direction: column;
   } */
+/* } */
 }
-@media (max-width: 300px) {
+ @media (max-width: 300px) {
   body {
     font-size: 8px;
   }
   .navigation {
     font-size: 0.8em;
   }
-  .main-content h2 {
-    font-size: 1.1em;
+}
+  /* .main-content h2,
+  #Engineer {
+    font-size: 0.8em;
   }
   .main-content h3 {
-    font-size: 0.7em;
+    font-size: 0.7rem;
   }
   .main {
     background-size: 130px;
@@ -480,6 +535,9 @@ figure {
     font-size: 0.7em;
   }
   .content .card .info {
+    flex-direction: row; */
+    /* align-items: center; */
+/* 
     font-size: 1.5em;
   }
 
@@ -488,12 +546,17 @@ figure {
     display: flex;
     flex-direction: column;
     font-size: 7px;
+    margin-top: 20px;
   }
   .navigation a {
     font-size: 0.7em;
   }
   .project-title {
     font-size: 0.59em;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
   }
   .project-card .project-image img {
     width: 100%;
@@ -517,8 +580,12 @@ figure {
     display: flex;
     flex-direction: column;
   }
-  /* .cards {
+  .content .project-card {
     display: flex;
     flex-direction: column;
   } */
-}
+/* .cards {
+    display: flex;
+    flex-direction: column;
+  } */
+/* } 
