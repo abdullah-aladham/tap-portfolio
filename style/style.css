@@ -151,8 +151,6 @@ section {
 figure {
   margin-left: 55%;
 }
-/* .rs-element img::before {
-} */
 
 #desc {
   text-align: justify;
@@ -171,7 +169,7 @@ figure {
   color: #008db0;
   font-size: 2.2em;
   font-weight: 800;
-  /* margin-bottom: 30px; */
+
   margin: 30px;
 }
 .content {
@@ -250,9 +248,7 @@ figure {
   margin-right: auto;
   width: 80%;
 }
-/* .project-info {
-  padding: 1em;
-} */
+
 .project-category {
   font-size: 0.8em;
   color: black;
@@ -264,10 +260,7 @@ figure {
   font-weight: 800;
   margin-top: 10px;
 }
-/* #projects {
-  display: flex;
-  flex-direction: row;
-} */
+
 .proj-name {
   font-size: 0.9rem;
 }
@@ -354,65 +347,6 @@ figure {
     flex-direction: row;
   }
 
-  /* .rs-element #portfolio-img {
-    display: flex;
-    max-width: 300px;
-    max-height: 300px;
-  }
-  .title {
-    font-size: 1.8em;
-  }
-  section {
-    padding: 80px 20px;
-  }
-  .main {
-    background-size: 350px;
-  }
-  .main h2 {
-    font-size: 1.2em;
-    font-weight: 400;
-  } */
-  /* .main h2 span {
-    font-size: 1.5em;
-  } */
-
-  /* .main h3 {
-    font-size: 0.9em;
-  }
-  .main .social-icons {
-    font-size: 0.9em;
-  }
-  .main-btn {
-    font-size: 0.9em;
-  }
-
-  .content {
-    flex-direction: row;
-    align-items: center;
-  } */
-  /* .main{
-        background-position:right center;
-    } */
-  /* .project-card .project-info {
-    font-size: 1.3em;
-  }
-  .project-title {
-    font-size: 0.65em;
-  }
-  .projects {
-    display: flex;
-    flex-direction: row;
-  }
-  .cards,
-  #services {
-    display: flex;
-    flex-direction: row;
-  }
-  #contact {
-    display: flex;
-    flex-direction: row;
-  }
-}*/
   @media (min-width: 300px) {
     body {
       font-size: 9px;
@@ -473,14 +407,7 @@ figure {
     .main-content h3 {
       font-size: 0.4em;
     }
-    /* .main {
-      background-size: 250px;
-    } */
-    /* 
-  .rs-element #portfolio-img {
-    max-width: 195px;
-    max-height: 195px;
-  } */
+
     .content {
       display: flex;
       flex-direction: column;
@@ -503,168 +430,3 @@ figure {
     }
   }
 }
-
-/* @media (max-width: 500px) {
-  body {
-    font-size: 8px;
-  }
-  .navigation {
-    font-size: 0.8em;
-  }
-  .main #article h2{
-    font-size: 0.4eem;
-
-  }
-  .main #article  #greet{
-    font-size: 0.5em;
-     /* flex-wrap: wrap;  */
-/* }
-.main #Engineer {
-  font-size: 0.5em;
-  margin-left: -20px;
-}
-.main #desc,
-#see-more {
-  font-size: 0.4rem;
-}
-.main-btn {
-  font-size: 0.7em;
-}
-.Proj-btn {
-  font-size: 0.6em;
-}
-.card {
-  max-width: 150%;
-  max-height: 150%;
-  font-size: 0.9em;
-  overflow: scroll;
-}
-.rs-element img {
-  max-width: 80px;
-  max-height: 80px;
-  margin-left: 90%;
-}
-
-.main-content h2 {
-  font-size: 0.3em;
-}
-.main-content span {
-  font-size: 0.6 em;
-}
-.social-icons {
-  font-size: 1em;
-  display: flex;
-  justify-content: center;
-
-  flex-direction: column;
-}
-.project-card .project-info {
-  font-size: 1.5em;
-}
-.proj-name {
-  font-size: 1.5em;
-}
-
-.main-content h3 {
-  font-size: 0.4em;
-}
-.main {
-  background-size: 250px;
-}
-
-.title {
-  font-size: 2em;
-}
-
-.card .info p {
-  font-size: 1.2em;
-}
-.footer {
-  font-size: 1.2em;
-} */
-
-/* .main-content h2,
-  #Engineer {
-    font-size: 0.8em;
-  }
-  .main-content h3 {
-    font-size: 0.7rem;
-  }
-  .main {
-    background-size: 130px;
-  }
-  .navigation a {
-    font-size: 0.8em;
-  }
-
-  .rs-element #portfolio-img {
-    width: 70px;
-    height: 70px;
-  }
-  .main div h2 {
-    font-size: 0.8em;
-  }
-  .main div span {
-    font: size 0.77em;
-  }
-  .main div h3 {
-    font-size: 0.8em;
-  }
-  .content .card {
-    font-size: 0.7em;
-  }
-  .content .card .info {
-    flex-direction: row; */
-/* align-items: center; */
-/* 
-    font-size: 1.5em;
-  }
-
-  #contact,
-  #services {
-    display: flex;
-    flex-direction: column;
-    font-size: 7px;
-    margin-top: 20px;
-  }
-  .navigation a {
-    font-size: 0.7em;
-  }
-  .project-title {
-    font-size: 0.59em;
-  }
-  .project-card {
-    display: flex;
-    flex-direction: column;
-  }
-  .project-card .project-image img {
-    width: 100%;
-  }
-  .card .info p {
-    font-size: 7px;
-  }
-  .footer {
-    font-size: 0.5em;
-  }
-  .social-icons a i {
-    font-size: 0.6em;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-btn {
-    font-size: 0.6em;
-  }
-  .projects,
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
-  .content .project-card {
-    display: flex;
-    flex-direction: column;
-  } */
-/* .cards {
-    display: flex;
-    flex-direction: column;
-  } */
-/* }  */
